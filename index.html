@@ -1,1 +1,309 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Lab ar </title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <!-- toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        </div><!-- /.container-fluid --> 
+        <!-- Menu desplegable del nav -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Viaja</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal2">Conduce</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal3">Inicia sesión</a></li>
+          </ul>
+        </div><!-- navbar-close -->
+        <div class="logoLab">
+          <img src="assets/images/logoForma.png" alt="logo">
+        </div>
+    </nav>
+
+    <!--modal first-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="imgmodal modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="assets/images/usuario.jpg" alt="usuario" height="200" width="200">
+          </div>
+          <div class="modal-body modalbg">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <span>Forgot password? <a href="#">Click here</a></span>
+                <button type="button" class="btn btn-login">LOGING</button>
+            </form>
+          </div>
+         </div>
+      </div>
+    </div>
+     <!--modal secund-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-text" id="exampleModalLabel">Ya tienes una cuenta?</h4>
+            <h4 class="modal-text2"> O crea una cuenta nueva</h4>
+          </div>
+          <div class="modal-body modal2">
+            <form>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Correo electronico">
+              </div>  
+              <div class="col-md-12 form-group">
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+              </div> 
+              <div class="col-md-12 form-group">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              </div>
+              <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ciudad">
+              </div>
+              <div class="col-md-12 form-group">
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="(Opcional) Código de invitación">
+              </div>           
+              <div class="col-md-12 btn-group ">
+                <button type="button" class="btn btn-modal2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Como te enterastes de nosotros <span class="caret"></span>
+                </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-info">Enviar</button>
+            </form>
+          </div>s
+        </div>
+      </div>
+    </div>
+     <!--modal thrid-->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <form class="form-horizontal">
+              <div class="col-md-12 form-group">
+                <h5 class="modaltext3">¿Tienes vehículo de 4 puertas?</h5>
+                <select class="form-control input-lg"></select>
+              </div>  
+              <div class="col-md-12 form-group">
+                <h5 class="modaltext3">Marca</h5>
+                <select class="form-control input-lg"></select>
+              </div> 
+              <div class="col-md-12 form-group">
+                <h5 class="modaltext3">Modelo</h5>
+                <select class="form-control input-lg"></select>
+              </div>
+              <div class="col-md-12 form-group">
+                <h5 class="modaltext3">Año</h5>
+                <select class="form-control input-lg"></select>
+              </div>
+              <div class="col-md-12 form-group">
+                <h5 class="modaltext3">Número de matrícula</h5>
+                <select class="form-control input-lg"></select>
+              </div>           
+            </form>
+            <button type="button" class="btn btn-info3">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--section one -->
+  <section class="bg">
+    <div class="viewdesktop">
+      <div class="viewdesktop-text">
+        <h3>Disfruta del viaje</h3>
+        <h3>Eres dueño de tu tiempo</h3>
+        <p>Viaja con <img  class="imgone" src="assets/images/logoBlanco.png" alt=""> </p>
+      </div>
+        <button class="btn  btndesktop" type="button">Registrate</button>
+          <hr>
+          <span class="textafter">O bien</span>
+        <button class="btn btndesktop" type="button">Conviértete en un conductor</button>
+    </div>
+    <div class="viewmobile">
+      <div class="viewmobileLetter">
+        <p class="viewletter">Comienza a viajar </p>
+        <p class="viewletter">con <img class="logoLab2" src="assets/images/logoBlanco.png" alt=""> </p>
+      </div>
+      <div class="viewmobilebutton">
+          <button class="btn btn-default" type="button">Descarga el app</button>
+        </div>
+    </div>
+  </section>
+    <!-- section two-->
+  <section class="bg2">
+    <div>
+      <div class="imgcel">
+        <div  class="viewmobile2">
+          <h2 class="celletter">La nueva app</h2>
+        </div>
+          <img class="imgcel-cel" src="assets/images/iPhone6Plus.png" alt="iphone" height="300" width="220">
+        <div class="viewdesktop2 section2box"> 
+          <h4>Descarga la nueva app</h4>
+          <p>La version actualizada de Lab< ar está llena de
+            nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+          <p>Con solo tocar un botón, un auto llega justto a tu ubocación.
+            Súbete y no te preocupes : tu conductor sabe exactamnetes a donde ir.</p>
+        </div>
+      </div>
+      <div class="viewmobile2">
+        <p class="viewmobile2text">LLega a tu destino aún más rápido</p>
+      </div>
+    </div>
+  </section>
+    <!-- section three-->
+  <section class="conduce">
+    <div class="conducebox">
+      <h4>Conduce cuando quieras</h4>
+      <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+      <button class="btn-conduce btn btn-default " >Conviértete en conductor</button>
+    </div>
+  </section>
+    <!-- section four-->
+  <section class="bgfour">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h4>Tarifas</h4>
+          <p>Consultas las tarifas LabCar aquí</p>
+          <div>
+          <img src="./assets/images/shape.png" alt="localizacion">
+          <input class="form-control" type="text" placeholder="Ingrese su punto de partida">
+          </div>
+          <div class="formimg">
+          <img src="./assets/images/shape2.png" alt="navegación">
+          <input class="form-control" type="text" placeholder="Ingrese su destino" >
+          </div>
+          <div>
+            <button class="btn btndesktop btndesktop4" type="button">¡TRAZAR RUTA!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container1 viewmobile4">
+      <div class="row">
+        <div class=" col-xs-12 navimg">
+        </div>
+      </div>
+    </div>
+    <div class="container viewdesktop4">
+      <div class="row">
+        <div class="col-md-6 navimg4">
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- section five-->
+  <section class="bg5">
+    <p><img  class="img5" src="assets/images/logoBlanco.png" alt=""></p>
+    <hr>
+    <div class="container">
+      <div class="row"> 
+        <div class="col-xs-6 col-md-4">
+          <ul  class="menu">
+            <li>Viaja</li>
+            <li>Conduce</li>
+            <li>Ciudades</li>
+            <li>Ciudades</li>
+            <li>Entregas</li>
+            <li>Cómo funciona?</li>
+            <li>Paises</li>
+            <li>Seguridad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="container viewdesktop5">
+        <div class="row">
+          <div class="col-md-4 ">
+            <ul class="menu">
+              <li>Oportunidades</li>
+              <li>Nuestra historia</li>
+              <li>API de Labcars</li>
+              <li>Eventos</li>
+              <li>Desarroladores</li>
+              <li>Servicios</li>
+              <li>Laboratoria</li>
+              <li>Coders</li>
+              </ul>
+              </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <ul>
+              <li class="appgoo"><img src="assets/images/appstore.png" alt="App"></li>
+              <li class="appgoo"><img src="assets/images/enBadgeWebGeneric.png" alt="Google"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container icono">
+        <div>
+          <div>
+            <ul class="icono">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></button></li>
+              <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+              <li><i class="fa fa-apple" aria-hidden="true"></i></li>
+              <li><i class="fa fa-play" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <span class="footer"><i class="fa fa-copyright" aria-hidden="true">2017 LabCar technologies Inc.</i><span>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
